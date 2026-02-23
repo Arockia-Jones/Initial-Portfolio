@@ -32,9 +32,9 @@ const Hero = () => {
                 Connect With Me
               </AnchorLink>
             </div>
-            <div className="hero-resume">
+            <a href="/resume.pdf" download className="hero-resume">
               My Resume
-            </div>
+            </a>
         </div>
     </div>
   )
