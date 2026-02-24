@@ -25,25 +25,27 @@ const Navbar = () => {
   return (
     <div className='navbar'>
 
-      <img src={Jones1} alt="" />
+      <AnchorLink href="#home" className="logo-link" onClick={() => setMenu("home")}>
+        <img src={Jones1} alt="Jones Logo" />
+      </AnchorLink>
 
       {/* Hide hamburger when open */}
       {!isOpen && (
-        <img 
-          src={menu_open} 
-          onClick={openMenu} 
-          alt="" 
+        <img
+          src={menu_open}
+          onClick={openMenu}
+          alt=""
           className='nav-mob-open'
         />
       )}
 
       <ul ref={menuRef} className="nav-menu">
 
-        <img 
-          src={menu_close}  
-          onClick={closeMenu} 
-          alt="" 
-          className="nav-mob-close" 
+        <img
+          src={menu_close}
+          onClick={closeMenu}
+          alt=""
+          className="nav-mob-close"
         />
 
         <li>

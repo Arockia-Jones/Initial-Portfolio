@@ -15,6 +15,11 @@
     padding-right: 125px;
 }
 
+.footer-top-left{
+    display: flex;
+    flex-direction: column;
+}
+
 .footer-top-left img{
     width: 120px;
     margin-bottom: 15px;
@@ -26,11 +31,7 @@
    max-width: 480px;
    line-height: 30px;
    color: #b0b0b0;
-   
-   
 }
-
-/* -------- QUICK LINKS -------- */
 
 /* -------- QUICK LINKS -------- */
 
@@ -68,7 +69,6 @@
     transition: width 0.3s ease;
 }
 
-/* HOVER EFFECT */
 .footer-quick-links ul li a:hover{
     color: white;
     transform: translateX(6px);
@@ -78,6 +78,7 @@
 .footer-quick-links ul li a:hover::after{
     width: 100%;
 }
+
 /* -------- HR -------- */
 
 .footer hr{
@@ -95,13 +96,11 @@
     align-items: center;
 }
 
-/* COPYRIGHT */
 .footer-bottom-left{
     color: #a0a0a0;
     font-size: 17px;
 }
 
-/* SOCIAL ICONS */
 .footer-social-icons{
     display: flex;
     gap: 25px;
@@ -130,28 +129,55 @@
     transform: translateY(-4px);
 }
 
-/* -------- RESPONSIVE -------- */
+/* ================================================= */
+/* ================= MOBILE FIX ==================== */
+/* ================================================= */
 
-@media(max-width:768px){
+@media (max-width: 768px) {
 
-    .footer{
-        margin: 60px 40px 0 40px;
-        padding-bottom: 80px;
-    }
+  .footer {
+    margin: 60px auto 0 auto;
+    padding: 0 20px 60px 20px;
+    align-items: center;
+    text-align: center;
+  }
 
-    .footer-top{
-        flex-direction: column;
-        gap: 30px;
-    }
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0;
+    gap: 40px;
+  }
 
-    .footer-bottom{
-        flex-direction: column;
-        gap: 25px;
-        align-items: flex-start;
-    }
+  .footer-top-left {
+    align-items: center;
+  }
 
-    .footer-social-icons{
-        align-self:center;
-        padding-left: 58px;
-    }
+  .footer-top-left img{
+    padding-top: 40px;
+  }
+
+  .footer-top-left p{
+    max-width: 100%;
+  }
+
+  .footer-quick-links{
+    align-items: center;
+  }
+
+  .footer-quick-links ul{
+    align-items: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .footer-social-icons {
+    justify-content: center;
+    padding-right: 0;
+  }
+
 }
