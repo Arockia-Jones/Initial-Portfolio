@@ -6,13 +6,24 @@ import Services from './Components/Services/Services'
 import MyWork from './Components/MyWork/MyWork'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
+import AIChat from './Components/AIChat/AIChat'
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import './falling.css';   // 👈 create this file
+
 const App = () => {
   return (
-    <div>
+    <div className="app-container">
+
+      {/* 🌌 Falling Background */}
+      <div className="falling-bg">
+        {Array.from({ length: 20 }).map((_, i) => (
+          <span key={i}></span>
+        ))}
+      </div>
+
       <Navbar/>
       <Hero />
       <About />
@@ -20,8 +31,8 @@ const App = () => {
       <MyWork />
       <Contact />
       <Footer />
+      <AIChat />
 
-      {/* ✅ Toast must be here */}
       <ToastContainer position="top-right" autoClose={3000} />
     </div>
   )
