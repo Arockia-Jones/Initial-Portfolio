@@ -163,6 +163,12 @@ h3 {
     right: 20px;
     font-size: 12px;
     box-shadow: 0 0 18px rgba(249,115,22,0.5);
+    align-items: center;
+  
+  }
+
+  .list-btn{
+    width: 102%;
   }
 
 }
